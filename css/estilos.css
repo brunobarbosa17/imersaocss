@@ -1,0 +1,40 @@
+body {
+    background-image: url('https://media2.giphy.com/media/aRZ4vTsHnyW6A/giphy.gif');
+    font-family: Comic Sans MS;
+    background-size: auto 50vh;
+    height: 100vh;
+}
+
+.menu {
+    background-color: white;
+    font-color: red;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;  
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: xx-large;
+}
+
+.site-subtittle,
+.site-tittle {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.site-subtittle {
+    font-style: italic;
+}
