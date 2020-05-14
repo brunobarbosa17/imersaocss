@@ -1,13 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url('https://media2.giphy.com/media/aRZ4vTsHnyW6A/giphy.gif');
+    background-image: url("../img/fundo.jpg");
     font-family: Comic Sans MS;
-    background-size: auto 50vh;
+    background-size: auto 100vh;
     height: 100vh;
+    font-size: : 10px;
+}
+
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
-    background-color: white;
-    font-color: red;
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 
 .menu ul {
@@ -19,22 +42,57 @@ body {
     list-style: none;  
 }
 
-a {
-    text-decoration: none;
-    color: black;
+.menu inicio {
+    display: block;
+    padding: 8px 18px;
 }
 
-a:hover {
+inicio {
+    text-decoration: none;
+    color: wheat;
+}
+
+inicio:hover {
     text-decoration: underline;
-    font-size: xx-large;
+    font-size: large;
 }
 
 .site-subtittle,
 .site-tittle {
     text-align: center;
-    color: whitesmoke;
+    color: white;
+    font-size: large;
+    display: block;
 }
 
-.site-subtittle {
+/*.site-subtittle {
     font-style: italic;
+    margin: 20px;
+    border: 4px solid brown;
+    padding: 10px;
+    height: auto 100px;
+    width: auto 100px;
+    box-shadow: 10px 10px;
 }
+
+.site-tittle {
+    margin: 20px;
+    border: 4px solid brown;
+    padding: 10px;
+    height: auto 100px;
+    width: auto 100px;
+    box-shadow: 10px 10px;
+}*/
+
+.img-projetos {   
+    height: 180px;
+    width: 270px;
+    align-items: flex-start;
+}
+
+/*.img-cabecalho { IMAGEM OCULTADA PQ N DEU CERTO
+    border-radius: 50%;
+    height: 180px;
+    width: 160px;
+
+}*/
