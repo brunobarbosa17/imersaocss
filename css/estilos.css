@@ -65,7 +65,7 @@ inicio:hover {
     display: block;
 }
 
-/*.site-subtittle {
+.site-subtittle {
     font-style: italic;
     margin: 20px;
     border: 4px solid brown;
@@ -82,7 +82,7 @@ inicio:hover {
     height: auto 100px;
     width: auto 100px;
     box-shadow: 10px 10px;
-}*/
+}
 
 .img-projetos {   
     height: 180px;
