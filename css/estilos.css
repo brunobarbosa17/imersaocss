@@ -5,21 +5,27 @@
 }
 
 body {
-    background-image: url("../img/fundo.jpg");
-    font-family: Comic Sans MS;
+    font-family: 'Cousine', monospace;
+    background-color: whitesmoke;
     background-size: auto 100vh;
     height: 100vh;
-    font-size: : 10px;
+    font-size: 14px;
 }
 
 @media (min-width: 400px) {
     body {
-        font-size: 14px;
+        font-size: 18px;
     }
+}
 
+@media (min-width: 600px) {
+    body {
+        font-size: 28px;
+    }
 }
 
 header {
+
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -30,7 +36,7 @@ header {
     background-color: black;
     position: fixed;
     width: 100vw;
-    top: 0;
+    top: 0px;
 }
 
 .menu ul {
@@ -39,56 +45,58 @@ header {
 }
 
 .menu li {
-    list-style: none;  
+    list-style: none;
 }
 
-.menu inicio {
+.menu a {
     display: block;
     padding: 8px 18px;
 }
 
-inicio {
+a {
     text-decoration: none;
     color: wheat;
 }
 
-inicio:hover {
+a:hover {
     text-decoration: underline;
-    font-size: large;
+    font-size: 32px;
 }
 
 .site-subtittle,
 .site-tittle {
     text-align: center;
-    color: white;
-    font-size: large;
     display: block;
 }
 
-/*.site-subtittle {
-    font-style: italic;
-    margin: 20px;
-    border: 4px solid brown;
-    padding: 10px;
-    height: auto 100px;
-    width: auto 100px;
-    box-shadow: 10px 10px;
+.site-tittle {
+    font-size: : 4em;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
-.site-tittle {
-    margin: 20px;
-    border: 4px solid brown;
-    padding: 10px;
-    height: auto 100px;
-    width: auto 100px;
-    box-shadow: 10px 10px;
-}*/
+.site-subtittle {
+    font-family: 'Shadows Into Light', cursive;
+}
 
-.img-projetos {   
+.portfolio h2 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 30px;
+}
+
+.img-portfolio {   
     height: 180px;
     width: 270px;
     align-items: flex-start;
 }
+
+.inicio {
+    padding: 16px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: black;
+}
+
+
 
 /*.img-cabecalho { IMAGEM OCULTADA PQ N DEU CERTO
     border-radius: 50%;
