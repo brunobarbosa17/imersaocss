@@ -25,7 +25,6 @@ body {
 }
 
 header {
-
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -78,29 +77,64 @@ a:hover {
     font-family: 'Shadows Into Light', cursive;
 }
 
-.portfolio h2 {
+.inicio { /*Titulo e subtitulo com borda*/
+    padding: 0.5em;
+    border-width: 6px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 5em;
+}
+
+.portfolio {
+    background-image: url("../img/fundo.jpg");
+    padding: 2em;
+    height: 100vh;
+}
+
+.portfolio h2 { /*Nome portfolio*/
     font-family: 'Balsamiq Sans', cursive;
     font-size: 30px;
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: white;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+}
+
+@media (min-width: 560px) {
+    .portfolio .grid {
+    grid-template-columns: 240px 240px;
+    }
+}
+
+@media (min-width: 880px) {
+    .portfolio .grid {
+    grid-template-columns: 240px 240px 240px;
+    justify-content: center;
+    align-content: center;
+    height: calc(100vh - 8em - 48px);
+    }
+}
+
+.portfolio figure {
+    text-align: center;
 }
 
 .img-portfolio {   
     height: 180px;
     width: 270px;
-    align-items: flex-start;
+    object-fit: scale-down;
 }
 
-.inicio {
-    padding: 16px;
-    border-width: 6px;
-    border-style: solid;
-    border-color: black;
-}
-
-
-
-/*.img-cabecalho { IMAGEM OCULTADA PQ N DEU CERTO
+/*.img-inicio .img {
     border-radius: 50%;
-    height: 180px;
-    width: 160px;
-
+    height: 280px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }*/
+
