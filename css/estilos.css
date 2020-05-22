@@ -49,7 +49,7 @@ header {
 
 .menu a {
     display: block;
-    padding: 8px 18px;
+    padding: 9px 18px;
 }
 
 a {
@@ -82,13 +82,16 @@ a:hover {
     border-width: 6px;
     border-style: solid;
     border-color: black;
-    margin-bottom: 5em;
+
 }
 
 .portfolio {
     background-image: url("../img/fundo.jpg");
     padding: 2em;
-    height: 100vh;
+    width: auto;
+    min-width: 100vh;
+    height: auto;
+    min-height: 100vh;
 }
 
 .portfolio h2 { /*Nome portfolio*/
@@ -101,7 +104,11 @@ a:hover {
 
 .portfolio .grid {
     display: grid;
-    gap: 2em;
+    gap: 5em;
+}
+
+.portfolio figure {
+    text-align: center;
 }
 
 @media (min-width: 560px) {
@@ -113,21 +120,36 @@ a:hover {
 @media (min-width: 880px) {
     .portfolio .grid {
     grid-template-columns: 240px 240px 240px;
-    justify-content: center;
     align-content: center;
+    justify-content: center;
     height: calc(100vh - 8em - 48px);
     }
 }
 
-.portfolio figure {
-    text-align: center;
+.img-portfolio {
+    height: 240px;
+    width: 240px;
+    object-fit: contain;
+    object-position: bottom;
 }
 
-.img-portfolio {   
-    height: 180px;
-    width: 270px;
-    object-fit: scale-down;
+@media (min-width: 880px) {
+    .portfolio .grid {
+        gap: 12em;
+        align-content: center;
+        justify-content: center;
+    }
+    .img-portfolio {
+        height: 340px;
+        width: 440px;
+    }
 }
+
+footer {
+    color: wheat;
+    background-color: black;
+}
+
 
 /*.img-inicio .img {
     border-radius: 50%;
