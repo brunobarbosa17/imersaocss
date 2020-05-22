@@ -88,8 +88,6 @@ a:hover {
 .portfolio {
     background-image: url("../img/fundo.jpg");
     padding: 2em;
-    width: auto;
-    min-width: 100vh;
     height: auto;
     min-height: 100vh;
 }
@@ -111,6 +109,13 @@ a:hover {
     text-align: center;
 }
 
+.img-portfolio {
+    height: 240px;
+    width: 240px;
+    object-fit: contain;
+    object-position: bottom;
+}
+
 @media (min-width: 560px) {
     .portfolio .grid {
     grid-template-columns: 240px 240px;
@@ -126,13 +131,6 @@ a:hover {
     }
 }
 
-.img-portfolio {
-    height: 240px;
-    width: 240px;
-    object-fit: contain;
-    object-position: bottom;
-}
-
 @media (min-width: 880px) {
     .portfolio .grid {
         gap: 12em;
@@ -146,6 +144,10 @@ a:hover {
 }
 
 footer {
+    font-size: 12px;
+    padding: 1em;
+    text-align: center;
+    width: auto;
     color: wheat;
     background-color: black;
 }
