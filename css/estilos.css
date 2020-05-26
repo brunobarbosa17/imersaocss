@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Cousine', monospace;
-    background-color: whitesmoke;
+    background-image: url("../img/fundo.jpg");
     background-size: auto 100vh;
     height: 100vh;
     font-size: 14px;
@@ -57,24 +57,18 @@ a {
     color: wheat;
 }
 
-a:hover {
+.menu a:hover {
     text-decoration: underline;
     font-size: 32px;
 }
 
-.site-subtittle,
-.site-tittle {
-    text-align: center;
-    display: block;
-}
-
-.site-tittle {
-    font-size: : 4em;
-    font-family: 'Balsamiq Sans', cursive;
-}
-
-.site-subtittle {
-    font-family: 'Shadows Into Light', cursive;
+.img-inicio .img{
+    border-radius: 50%;
+    height: 240px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .inicio { /*Titulo e subtitulo com borda*/
@@ -82,16 +76,32 @@ a:hover {
     border-width: 6px;
     border-style: solid;
     border-color: black;
-
 }
 
+.inicio { /*texto sobre mim*/
+    text-align: center;
+    display: block;
+    width: 1250px;
+    height: 400px;
+}
+
+.site-subtittle {
+    font-size: : 4em;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.site-tittle {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.contato,
 .portfolio {
-    background-image: url("../img/fundo.jpg");
     padding: 2em;
     height: auto;
     min-height: 100vh;
 }
 
+.contato h2,
 .portfolio h2 { /*Nome portfolio*/
     font-family: 'Balsamiq Sans', cursive;
     font-size: 30px;
@@ -116,49 +126,52 @@ a:hover {
     object-position: bottom;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 668px) {
     .portfolio .grid {
-    grid-template-columns: 240px 240px;
+    grid-template-columns: 250px 180px;
     }
+    .img-inicio .img {
+        border-radius: 50%;
+        height: 340px;
+        width: 340px;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1050px) {
     .portfolio .grid {
-    grid-template-columns: 240px 240px 240px;
+    gap: 11em;
+    grid-template-columns: 250px 210px 200px;
     align-content: center;
     justify-content: center;
     height: calc(100vh - 8em - 48px);
-    }
-}
-
-@media (min-width: 880px) {
-    .portfolio .grid {
-        gap: 12em;
-        align-content: center;
-        justify-content: center;
     }
     .img-portfolio {
         height: 340px;
         width: 440px;
     }
+    .img-inicio .img {
+        border-radius: 50%;
+        height: 500px;
+        width: 460px;
+}
+
+.contato a {
+    color: whitesmoke;
+    font-size: 8em;
+}
+
+.contato a:hover {
+    font-size: 10em;
+}
+
+.contato .icons {
+    text-align: center;
 }
 
 footer {
-    font-size: 12px;
+    font-size: 10px;
     padding: 1em;
     text-align: center;
     width: auto;
     color: wheat;
     background-color: black;
 }
-
-
-/*.img-inicio .img {
-    border-radius: 50%;
-    height: 280px;
-    width: 280px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
-
