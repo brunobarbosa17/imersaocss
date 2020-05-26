@@ -1,98 +1,74 @@
+/*Reset*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
 }
 
 body {
     font-family: 'Cousine', monospace;
-    background-image: url("../img/fundo.jpg");
-    background-size: auto 100vh;
+    background: url("../img/fundo.jpg");
     height: 100vh;
-    font-size: 14px;
 }
 
-@media (min-width: 400px) {
-    body {
-        font-size: 18px;
-    }
-}
-
-@media (min-width: 600px) {
-    body {
-        font-size: 28px;
-    }
-}
-
+/*Cabeçalho*/
 header {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu {
-    background-color: black;
-    position: fixed;
     width: 100vw;
-    top: 0px;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    height: 40px;
 }
 
-.menu ul {
+.menu{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 
-.menu li {
-    list-style: none;
-}
-
 .menu a {
-    display: block;
-    padding: 9px 18px;
-}
-
-a {
     text-decoration: none;
     color: wheat;
+    padding: 10px 0;
 }
 
-.menu a:hover {
+.menu a:hover{
     text-decoration: underline;
-    font-size: 32px;
+    font-size: 16px;
 }
 
-.img-inicio .img{
-    border-radius: 50%;
-    height: 240px;
-    width: 240px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.inicio { /*Titulo e subtitulo com borda*/
-    padding: 0.5em;
-    border-width: 6px;
-    border-style: solid;
-    border-color: black;
-}
-
-.inicio { /*texto sobre mim*/
+/*Introdução*/
+.intro{
+    margin-top: 50px;
     text-align: center;
-    display: block;
-    width: 1250px;
-    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
-.site-subtittle {
-    font-size: : 4em;
+.img-inicio img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+.inicio { 
+    /*Titulo e subtitulo com borda*/
+    width: 100vw;
+    padding: 10px;
+    border: 6px solid black;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.site-text {
+    font-size: 1.2rem;
     font-family: 'Balsamiq Sans', cursive;
 }
 
-.site-tittle {
-    font-family: 'Shadows Into Light', cursive;
-}
 
 .contato,
 .portfolio {
@@ -115,9 +91,7 @@ a {
     gap: 5em;
 }
 
-.portfolio figure {
-    text-align: center;
-}
+
 
 .img-portfolio {
     height: 240px;
@@ -125,35 +99,6 @@ a {
     object-fit: contain;
     object-position: bottom;
 }
-
-@media (min-width: 668px) {
-    .portfolio .grid {
-    grid-template-columns: 250px 180px;
-    }
-    .img-inicio .img {
-        border-radius: 50%;
-        height: 340px;
-        width: 340px;
-}
-
-@media (min-width: 1050px) {
-    .portfolio .grid {
-    gap: 11em;
-    grid-template-columns: 250px 210px 200px;
-    align-content: center;
-    justify-content: center;
-    height: calc(100vh - 8em - 48px);
-    }
-    .img-portfolio {
-        height: 340px;
-        width: 440px;
-    }
-    .img-inicio .img {
-        border-radius: 50%;
-        height: 500px;
-        width: 460px;
-}
-
 .contato a {
     color: whitesmoke;
     font-size: 8em;
@@ -163,10 +108,6 @@ a {
     font-size: 10em;
 }
 
-.contato .icons {
-    text-align: center;
-}
-
 footer {
     font-size: 10px;
     padding: 1em;
@@ -174,4 +115,27 @@ footer {
     width: auto;
     color: wheat;
     background-color: black;
+}
+
+@media screen and (min-width: 1200px){
+    .img-inicio img{
+        height: 240px;
+        width: 240px;
+        
+    }
+    .intro{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px 0;
+        height: 100vh;
+    }
+    .inicio { 
+        /*Titulo e subtitulo com borda*/
+        width: 50vw;
+        padding: 10px;
+        border: 6px solid black;
+        height: 200px;
+    }
+    
 }
