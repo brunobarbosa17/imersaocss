@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-size: 14px;
     text-align: center;
+    text-decoration: none;
 }
 
 body {
@@ -19,10 +20,10 @@ header {
     position: fixed;
     background-color: black;
     top: 0;
-    height: 40px;
+    height: 50px;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -34,26 +35,46 @@ header {
     padding: 10px 0;
 }
 
-.menu a:hover{
+.menu a:hover {
     text-decoration: underline;
-    font-size: 16px;
+    font-size: 26px;
 }
 
 /*Introdução*/
-.intro{
-    margin-top: 50px;
+.intro {
+    margin-top: 200px;
     text-align: center;
     display: flex;
     flex-flow: column nowrap;
+    height: 100vh;
 }
+
+.intro /*Efeito de animação no inicio*/*{
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: linear 1s animacaoTitulo forwards;
+}
+@keyframes animacaoTitulo {
+    from {
+        transform: scale(0.2) translateY(50vh);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0vh);
+        opacity: 1;
+    }
+    
+}/*Fim da animação*/
 
 .img-inicio img{
     border-radius: 50%;
-    width: 100px;
+    width: 170px;
+    height: 180px;
 }
 
 .inicio { 
     /*Titulo e subtitulo com borda*/
+    margin-top: 20px;
     width: 100vw;
     padding: 10px;
     border: 6px solid black;
@@ -68,7 +89,6 @@ header {
     font-size: 1.2rem;
     font-family: 'Balsamiq Sans', cursive;
 }
-
 
 .contato,
 .portfolio {
@@ -91,21 +111,22 @@ header {
     gap: 5em;
 }
 
-
-
 .img-portfolio {
-    height: 240px;
-    width: 240px;
+    height: 280px;
+    width: 280px;
     object-fit: contain;
     object-position: bottom;
 }
-.contato a {
+
+.icons i {
     color: whitesmoke;
-    font-size: 8em;
+    font-size: 80px;
+    margin-right: 20px;
 }
 
-.contato a:hover {
-    font-size: 10em;
+.icons i:hover {
+    font-size: 120px;
+    text-shadow: 0px 0px 5px white;
 }
 
 footer {
@@ -117,11 +138,17 @@ footer {
     background-color: black;
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1100px){
+    * {
+        font-size: 24px;
+    }
     .img-inicio img{
-        height: 240px;
-        width: 240px;
-        
+        height: 440px;
+        width: 440px;
+    }
+    .img-inicio :hover{
+        height: 540px;
+        width: 540px;
     }
     .intro{
         flex-direction: row;
@@ -133,9 +160,33 @@ footer {
     .inicio { 
         /*Titulo e subtitulo com borda*/
         width: 50vw;
-        padding: 10px;
+        padding: 5px;
         border: 6px solid black;
-        height: 200px;
+        height: auto;
     }
-    
+    .portfolio .grid {
+        grid-template-columns: 250px 180px;
+        gap: 450px;
+        }
+    .img-portfolio:hover {
+        transform: scale(1.4);
+    }
+    .img-portfolio {
+        height: 640px;
+        width: 440px;
+        transition: transform 500ms;
+        }
+    .icons i {/*Icones de contato*/
+        font-size: 200px;
+        margin: 30px;
+    }    
+    .icons i:hover {
+        font-size: 230px;
+    }    
+}
+
+@media screen and (min-width: 1400px){
+        .portfolio .grid {
+        grid-template-columns: 250px 180px 150px;
+        }
 }
