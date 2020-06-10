@@ -21,6 +21,7 @@ header {
     background-color: black;
     top: 0;
     height: 50px;
+    z-index: 1;
 }
 
 .menu {
@@ -49,7 +50,7 @@ header {
     height: 100vh;
 }
 
-.intro /*Efeito de animação no inicio*/*{
+.intro {
     transform: scale(0.2) translateY(50vh);
     opacity: 0;
     animation: linear 1s animacaoTitulo forwards;
@@ -65,6 +66,7 @@ header {
     }
     
 }/*Fim da animação*/
+
 
 .img-inicio img{
     border-radius: 50%;
@@ -97,13 +99,35 @@ header {
     min-height: 100vh;
 }
 
+.portfolio a {
+    font-style: italic;
+    text-decoration: underline;
+    color: white;
+    font-size: 17px;
+}
+
+.portfolio p { /*Paragráfo Experiências*/
+    color: white;
+    font-size: 20px;
+    text-align: start;
+    font-family: 'Balsamiq Sans', cursive;
+    margin-bottom: 10px;
+    text-indent: 25px;
+}
+
+
 .contato h2,
-.portfolio h2 { /*Nome portfolio*/
+.portfolio h2 { /*Nome portfolio, contato*/
     font-family: 'Balsamiq Sans', cursive;
     font-size: 30px;
-    margin-bottom: 1em;
+    margin-bottom: 80px;
+    margin-top: 50px;
     font-size: 2em;
     color: white;
+}
+
+.contato h2 { /*Margem do nome contato para baixo*/
+    margin-top: 150px;
 }
 
 .portfolio .grid {
@@ -116,6 +140,7 @@ header {
     width: 280px;
     object-fit: contain;
     object-position: bottom;
+    align-items: center;
 }
 
 .icons i {
@@ -129,10 +154,8 @@ header {
     text-shadow: 0px 0px 5px white;
 }
 
-footer {
-    font-size: 10px;
+footer { /*Rodapé*/
     padding: 1em;
-    text-align: center;
     width: auto;
     color: wheat;
     background-color: black;
@@ -145,10 +168,10 @@ footer {
     .img-inicio img{
         height: 440px;
         width: 440px;
+        transition: transform 500ms;
     }
     .img-inicio :hover{
-        height: 540px;
-        width: 540px;
+        transform: scale(1.4);
     }
     .intro{
         flex-direction: row;
@@ -170,11 +193,13 @@ footer {
         }
     .img-portfolio:hover {
         transform: scale(1.4);
-    }
+    }    
     .img-portfolio {
         height: 640px;
         width: 440px;
         transition: transform 500ms;
+        position: relative;
+        left: 100px;
         }
     .icons i {/*Icones de contato*/
         font-size: 200px;
@@ -182,7 +207,7 @@ footer {
     }    
     .icons i:hover {
         font-size: 230px;
-    }    
+    }
 }
 
 @media screen and (min-width: 1400px){
