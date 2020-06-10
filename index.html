@@ -1,81 +1,124 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Meu primeiro site HTML & CSS</title>
-        <link rel="stylesheet" href="./css/estilos.css">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Cousine&family=Shadows+Into+Light&display=swap"
-            rel="stylesheet">
-        <script src="https://kit.fontawesome.com/3ceeeec1dc.js" crossorigin="anonymous"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro site HTML & CSS</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Cousine&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3ceeeec1dc.js" crossorigin="anonymous"></script>
+</head>
 
-    <body>
-        <header>
-            <nav class="menu">
-                <a href="#intro">Home</a>
-                <a href="#portfolio">Projetos</a>
-                <a href="#contato">Contato</a>
-            </nav>
-        </header>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="#intro">Home</a>
+            <a href="#portfolio">Experiências</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
-        <section id="intro" class="intro">
-            <div class="img-inicio">
-                <img src="./img/bruno-perfil.jpg" alt=">Produção Audiovisual">            
-            </div>
+    <section id="intro" class="intro">
+        <div class="img-inicio">
+            <img src="./img/bruno-perfil.jpg" alt=">Produção Audiovisual">
+        </div>
 
-            <div class="inicio">
-                <h1 class="site-title">Quem sou?</h1>
-                <p class="site-text">Me chamo Bruno Barbosa, tenho 21 anos e sou estudante do curso de Análise e
-                    Desenvolvimento de Sistemas no Instituto Federal da Bahia - IFBA.
-                    Apesar do início das aulas terem sido adiadas, utilizo do tempo disponível para desenvolver minhas
-                    habilidades com programação em geral.
-                </p>
-            </div>
-        </section>
+        <div class="inicio">
+            <h1 class="site-title">Quem sou?</h1>
+            <p class="site-text"> Me chamo Bruno Barbosa, tenho 21 anos, apaixonado por tecnologia e games desde jovem,
+                me formei em Técnico em Informática pelo Colégio Estadual de Aplicação Anísio Teixeira e atualmente sou
+                estudante do curso de Análise e Desenvolvimento de Sistemas no Instituto Federal da Bahia - IFBA. Apesar
+                do início das aulas terem sido adiadas, utilizo do tempo disponível para aumentar meus conhecimentos em
+                programação antes mesmo do início do 1º semestre.
+            </p>
+        </div>
+    </section>
 
-        <section id="portfolio" class="portfolio">
-            <h2>Projetos</h2>
+    <section id="portfolio" class="portfolio">
+        <h2>Experiências</h2>
+        <p>
+            Durante o último ano do E.M Técnico fui aluno da <a
+                href="http://blog.pat.educacao.ba.gov.br/2017/08/a-escola-publica-marcou-presenca-na-campus-party/#comments">Oficina
+                de Produção de Mídias na Educação</a> na Educação, onde tive aulas teóricas referentes a comunicação,
+            produção e pós-produção de audiovisual.
+        </p>
 
-            <div class="grid">
-                <figure>
-                    <img class="img-portfolio" src="./img/bruno-redacao.jpg"
-                        alt=">Produção Textual durante a Campus Party 2017">
-                    <figcaption>Produção Textual durante a Campus Party 2017</figcaption>
-                </figure>
-                <figure>
-                    <img class="img-portfolio" src="./img/bruno-editando.jpg" alt=">Pós produção">
-                    <figcaption>Pós produção</figcaption>
-                </figure>
-                <figure>
-                    <img class="img-portfolio" src="./img/bruno-editando2.jpg" alt=">Edição">
-                    <figcaption>Edição</figcaption>
-            </div>
+        <p>
+            Ao fim da oficina, tivemos a oportunidade de cobrir o evento da Campus Party 2017 Bahia.
+            As produções podem ser acessadas aqui:
+        </p>
+
+        <p>
+            <a
+                href="http://www.educacao.ba.gov.br/midias/fotos/estudantes-realizam-cobertura-colaborativa-na-campus-party">Cobertura
+                Colaborativa 2017.</a>
+        </p>
+        <br>
+        <p>
+            <a href="https://www.youtube.com/user/TVProfessorWeb">Vídeos produzidos</a>
+        </p>
+
+        <p>
+            Antes da conclusão do Ensino Médio, fui selecionado para atuar como Estagiário de Nível Médio no Ministério
+            Público do Estado da Bahia, auxiliando na organização dos processos, enviando e recebendo documentos em
+            geral.
+        </p>
+
+        <p>
+            Após a formação no Ensino Médio, fui egresso do <a
+                href="http://www.flem.org.br/programa-primeiro-emprego/">Programa Primeiro Emprego</a>, ficando alocado
+            na Secretaria de Ciências Tecnologia e Inovação, onde a maior parte do tempo atuei como auxiliar técnico em
+            informática.
+        </p>
+
+        <div class="grid">
+
+            <figure>
+                <img class="img-portfolio" src="./img/bruno-redacao.jpg" alt=">
+                        Produção Textual durante a Campus Party 2017">
+                <figcaption>Produção Textual durante a Campus Party 2017</figcaption>
             </figure>
-        </section>
-        <section class="contato" id="contato">
-            <h2>Contato</h2>
-            
-            <div class="grid icons">
-                <a target="_blank" href="https://github.com/brunobarbosa17">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/bruno-b-b8b246a1/">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a target="_blank" href="https://www.instagram.com/o_brunobarbosa/">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="mailto:brunnobarbosas@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </section>
-        <footer>
-            <h1>Desenvolvido por: Bruno Barbosa</h1>
-        </footer>
-    </body>
 
-    </html>
+            <figure>
+                <img class="img-portfolio" src="./img/bruno-editando.jpg" alt=">Pós produção">
+                <figcaption>Pós produção</figcaption>
+            </figure>
+
+            <figure>
+                <img class="img-portfolio" src="./img/bruno-editando2.jpg" alt=">Edição">
+                <figcaption>Edição</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+        <div class="grid icons">
+            <a target="_blank" href="https://github.com/brunobarbosa17">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/bruno-b-b8b246a1/">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/o_brunobarbosa/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:brunnobarbosas@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a target="_blank"
+                href="https://wa.me/5571981703123/?text=Ol%C3%A1,%20esta%20%C3%A9%20uma%20mensagem%20do%20seu%20site%20hospedado%20no%20Git%20Hub.io!;">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <h1>Desenvolvido por: Bruno Barbosa
+        </h1>
+        <h2>📸: Peterson Azevedo</h2>
+    </footer>
+</body>
+
+</html>
